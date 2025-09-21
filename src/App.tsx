@@ -2,15 +2,15 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom"; // 👈 Use HashRouter
 import { UserProvider } from "@/contexts/UserContext";
+
 import Index from "./pages/Index";
 import { Quizzes } from "./pages/Quizzes";
 import { QuizTaking } from "./pages/QuizTaking";
 import { QuizThankYou } from "./pages/QuizThankYou";
 import { BasicInfo } from "./pages/BasicInfo";
 import { ProfilePage } from "./pages/ProfilePage";
-
 import { Certificate } from "./pages/Certificate";
 import NotFound from "./pages/NotFound";
 
@@ -22,7 +22,7 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        <Router>
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/quizzes" element={<Quizzes />} />
@@ -31,11 +31,9 @@ const App = () => (
             <Route path="/certificate" element={<Certificate />} />
             <Route path="/basic-info" element={<BasicInfo />} />
             <Route path="/profile" element={<ProfilePage />} />
-
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
-        </BrowserRouter>
+        </Router>
       </TooltipProvider>
     </UserProvider>
   </QueryClientProvider>
