@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Softpath-Tech.github.io/MyBharathWeb",
+  "homepage": "https://girisoftpath.github.io/Softpath-Tech/MyBharathWeb",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
