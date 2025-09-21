@@ -80,7 +80,7 @@ export const Header: React.FC = () => {
               </a>
               {isLoggedIn ? (
                 <a
-                  href="/quizzes"
+                  href="./#/quizzes"
                   className="text-foreground hover:text-primary transition-colors font-medium"
                 >
                   Quiz
@@ -88,7 +88,7 @@ export const Header: React.FC = () => {
               ) : (
                 <Button
                   variant="link" // Using variant="link" to make the button look like a link
-                  onClick={() => handleModalSwitch("mobileRegister")}
+                  onClick={() => handleModalSwitch("login")}
                   className="text-foreground hover:text-primary transition-colors font-medium"
                 >
                   Quiz

@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: "/MyBharathWeb/", // 👈 REQUIRED for GitHub Pages
+  base: "./", // 👈 use relative paths for all assets
   plugins: [react(), mode === "development" && componentTagger()].filter(
     Boolean
   ),

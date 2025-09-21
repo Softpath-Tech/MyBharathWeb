@@ -77,7 +77,7 @@ export const HeroSection: React.FC = () => {
             <Button
               size="lg"
               className="bg-gradient-to-r from-green-500 to-teal-400 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-xl transform hover:scale-105 transition-transform duration-300"
-              onClick={() => (window.location.href = "/quizzes")}
+              onClick={() => (window.location.href = "./#/quizzes")}
             >
               🧠 Take a Quiz
             </Button>
