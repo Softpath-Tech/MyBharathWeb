@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: "/Softpath-Tech/MyBharathWeb/",
+  base: "/MyBharathWeb/", // 👈 REQUIRED for GitHub Pages
   plugins: [react(), mode === "development" && componentTagger()].filter(
     Boolean
   ),
