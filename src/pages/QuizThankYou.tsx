@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { Textarea } from '@/components/ui/textarea';
-import { CheckCircle, Star } from 'lucide-react';
-import { useUser } from '@/contexts/UserContext';
+import React, { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Textarea } from "@/components/ui/textarea";
+import { CheckCircle, Star } from "lucide-react";
+import { useUser } from "@/contexts/UserContext";
 
 export const QuizThankYou: React.FC = () => {
   const { user } = useUser();
   const [rating, setRating] = useState(0);
-  const [feedback, setFeedback] = useState('');
+  const [feedback, setFeedback] = useState("");
 
   const handleStarClick = (starNumber: number) => {
     setRating(starNumber);
@@ -15,7 +15,7 @@ export const QuizThankYou: React.FC = () => {
 
   const handleSubmitFeedback = () => {
     // Handle feedback submission
-    console.log('Rating:', rating, 'Feedback:', feedback);
+    console.log("Rating:", rating, "Feedback:", feedback);
   };
 
   return (
@@ -37,24 +37,25 @@ export const QuizThankYou: React.FC = () => {
           {/* Submission Details */}
           <div className="space-y-4">
             <p className="text-muted-foreground text-lg">
-              Your quiz response was successfully submitted at{' '}
+              Your quiz response was successfully submitted at{" "}
               <span className="font-medium text-foreground">
                 {new Date().toLocaleTimeString()}
               </span>
-              . Please note this time for your records. Thank you for completing the quiz.
+              . Please note this time for your records. Thank you for completing
+              the quiz.
             </p>
 
             <div className="bg-muted rounded-lg p-4">
               <p className="text-lg font-medium">
-                You have scored <span className="text-primary">0</span> out of{' '}
+                You have scored <span className="text-primary">0</span> out of{" "}
                 <span className="text-primary">20</span> (
                 <span className="text-primary">0%</span>)
               </p>
             </div>
 
-            <Button 
+            <Button
               className="bg-gradient-primary hover:opacity-90 transition-opacity"
-              onClick={() => window.location.href = '/certificate'}
+              onClick={() => (window.location.href = "./#/certificate")}
             >
               Download Certificate
             </Button>
@@ -63,7 +64,8 @@ export const QuizThankYou: React.FC = () => {
           {/* Feedback Section */}
           <div className="bg-card rounded-lg border p-6 text-left space-y-6">
             <h2 className="text-xl font-bold text-center">
-              Please share your valuable feedback and rating to help us improve in the future.
+              Please share your valuable feedback and rating to help us improve
+              in the future.
             </h2>
 
             {/* Rating */}
@@ -72,7 +74,7 @@ export const QuizThankYou: React.FC = () => {
                 <span className="font-medium">Rating</span>
                 <span className="text-destructive">*</span>
               </div>
-              
+
               <div className="flex space-x-2">
                 {[1, 2, 3, 4, 5].map((star) => (
                   <button
@@ -83,8 +85,8 @@ export const QuizThankYou: React.FC = () => {
                     <Star
                       className={`h-8 w-8 ${
                         star <= rating
-                          ? 'fill-primary text-primary'
-                          : 'text-muted-foreground hover:text-primary'
+                          ? "fill-primary text-primary"
+                          : "text-muted-foreground hover:text-primary"
                       }`}
                     />
                   </button>
