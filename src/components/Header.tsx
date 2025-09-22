@@ -60,12 +60,12 @@ export const Header: React.FC = () => {
                 <img
                   src={yasLogo}
                   alt="Ministry of Youth Affairs & Sports"
-                  className="h-12 w-auto object-contain"
+                  className="h-16 w-auto object-contain" // Increased from h-12
                 />
                 <img
                   src={mybharatLogo}
                   alt="MY Bharat"
-                  className="h-10 w-auto object-contain"
+                  className="h-14 w-auto object-contain" // Increased from h-10
                 />
               </div>
             </div>

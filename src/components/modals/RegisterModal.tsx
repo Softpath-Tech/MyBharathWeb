@@ -257,11 +257,7 @@ export const RegisterModal: React.FC<RegisterModalProps> = ({
                     <SelectValue placeholder="Select state" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="andhra-pradesh">
-                      Andhra Pradesh
-                    </SelectItem>
-                    <SelectItem value="karnataka">Karnataka</SelectItem>
-                    <SelectItem value="tamil-nadu">Tamil Nadu</SelectItem>
+                    <SelectItem value="andhra-pradesh">Telangana</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -274,9 +270,53 @@ export const RegisterModal: React.FC<RegisterModalProps> = ({
                     <SelectValue placeholder="Select district" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="kurnool">Kurnool</SelectItem>
-                    <SelectItem value="anantapur">Anantapur</SelectItem>
-                    <SelectItem value="kadapa">Kadapa</SelectItem>
+                    <SelectItem value="adilabad">Adilabad</SelectItem>
+                    <SelectItem value="bhadradri-kothagudem">
+                      Bhadradri Kothagudem
+                    </SelectItem>
+                    <SelectItem value="hanamkonda">Hanamkonda</SelectItem>
+                    <SelectItem value="hyderabad">Hyderabad</SelectItem>
+                    <SelectItem value="jagtial">Jagtial</SelectItem>
+                    <SelectItem value="jangaon">Jangaon</SelectItem>
+                    <SelectItem value="jayashankar-bhupalpally">
+                      Jayashankar Bhupalpally
+                    </SelectItem>
+                    <SelectItem value="jogulamba-gadwal">
+                      Jogulamba Gadwal
+                    </SelectItem>
+                    <SelectItem value="kamareddy">Kamareddy</SelectItem>
+                    <SelectItem value="karimnagar">Karimnagar</SelectItem>
+                    <SelectItem value="khammam">Khammam</SelectItem>
+                    <SelectItem value="komaram-bheem-asifabad">
+                      Komaram Bheem Asifabad
+                    </SelectItem>
+                    <SelectItem value="mahabubabad">Mahabubabad</SelectItem>
+                    <SelectItem value="mahabubnagar">Mahabubnagar</SelectItem>
+                    <SelectItem value="mancherial">Mancherial</SelectItem>
+                    <SelectItem value="medak">Medak</SelectItem>
+                    <SelectItem value="medchal-malkajgiri">
+                      Medchal–Malkajgiri
+                    </SelectItem>
+                    <SelectItem value="mulugu">Mulugu</SelectItem>
+                    <SelectItem value="nagarkurnool">Nagarkurnool</SelectItem>
+                    <SelectItem value="nalgonda">Nalgonda</SelectItem>
+                    <SelectItem value="narayanpet">Narayanpet</SelectItem>
+                    <SelectItem value="nirmal">Nirmal</SelectItem>
+                    <SelectItem value="nizamabad">Nizamabad</SelectItem>
+                    <SelectItem value="peddapalli">Peddapalli</SelectItem>
+                    <SelectItem value="rajanna-sircilla">
+                      Rajanna Sircilla
+                    </SelectItem>
+                    <SelectItem value="rangareddy">Ranga Reddy</SelectItem>
+                    <SelectItem value="sangareddy">Sangareddy</SelectItem>
+                    <SelectItem value="siddipet">Siddipet</SelectItem>
+                    <SelectItem value="suryapet">Suryapet</SelectItem>
+                    <SelectItem value="vikarabad">Vikarabad</SelectItem>
+                    <SelectItem value="wanaparthy">Wanaparthy</SelectItem>
+                    <SelectItem value="warangal">Warangal</SelectItem>
+                    <SelectItem value="yadadri-bhuvanagiri">
+                      Yadadri Bhuvanagiri
+                    </SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -315,8 +355,35 @@ export const RegisterModal: React.FC<RegisterModalProps> = ({
                       <SelectValue placeholder="Select ULB" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="kurnool-municipal">
-                        Kurnool Municipal Corporation
+                      <SelectItem value="hyderabad-municipal">
+                        Hyderabad Municipal Corporation
+                      </SelectItem>
+                      <SelectItem value="warangal-municipal">
+                        Warangal Municipal Corporation
+                      </SelectItem>
+                      <SelectItem value="karimnagar-municipal">
+                        Karimnagar Municipal Corporation
+                      </SelectItem>
+                      <SelectItem value="nizamabad-municipal">
+                        Nizamabad Municipal Corporation
+                      </SelectItem>
+                      <SelectItem value="khammam-municipal">
+                        Khammam Municipal Corporation
+                      </SelectItem>
+                      <SelectItem value="mahbubnagar-municipal">
+                        Mahbubnagar Municipal Corporation
+                      </SelectItem>
+                      <SelectItem value="siddipet-municipal">
+                        Siddipet Municipal Corporation
+                      </SelectItem>
+                      <SelectItem value="suryapet-municipal">
+                        Suryapet Municipal Corporation
+                      </SelectItem>
+                      <SelectItem value="jagtial-municipal">
+                        Jagtial Municipal Corporation
+                      </SelectItem>
+                      <SelectItem value="mancherial-municipal">
+                        Mancherial Municipal Corporation
                       </SelectItem>
                     </SelectContent>
                   </Select>
@@ -343,8 +410,48 @@ export const RegisterModal: React.FC<RegisterModalProps> = ({
                         <SelectValue placeholder="Select block" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="kurnool-block">
-                          Kurnool Block
+                        {/* Adilabad District */}
+                        <SelectItem value="adilabad-mandal">
+                          Adilabad Mandal
+                        </SelectItem>
+                        <SelectItem value="bella-mandal">
+                          Bella Mandal
+                        </SelectItem>
+                        <SelectItem value="balkonda-mandal">
+                          Balkonda Mandal
+                        </SelectItem>
+
+                        {/* Karimnagar District */}
+                        <SelectItem value="karimnagar-mandal">
+                          Karimnagar Mandal
+                        </SelectItem>
+                        <SelectItem value="sarangapur-mandal">
+                          Sarangapur Mandal
+                        </SelectItem>
+                        <SelectItem value="ramadugu-mandal">
+                          Ramadugu Mandal
+                        </SelectItem>
+
+                        {/* Warangal District */}
+                        <SelectItem value="warangal-mandal">
+                          Warangal Mandal
+                        </SelectItem>
+                        <SelectItem value="dornakal-mandal">
+                          Dornakal Mandal
+                        </SelectItem>
+                        <SelectItem value="mulugu-mandal">
+                          Mulugu Mandal
+                        </SelectItem>
+
+                        {/* Nizamabad District */}
+                        <SelectItem value="nizamabad-mandal">
+                          Nizamabad Mandal
+                        </SelectItem>
+                        <SelectItem value="bodhan-mandal">
+                          Bodhan Mandal
+                        </SelectItem>
+                        <SelectItem value="banswada-mandal">
+                          Banswada Mandal
                         </SelectItem>
                       </SelectContent>
                     </Select>
@@ -360,8 +467,48 @@ export const RegisterModal: React.FC<RegisterModalProps> = ({
                         <SelectValue placeholder="Select panchayat" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="sample-panchayat">
-                          Sample Panchayat
+                        {/* Adilabad District */}
+                        <SelectItem value="adilabad-panchayat">
+                          Adilabad Panchayat
+                        </SelectItem>
+                        <SelectItem value="cherla-panchayat">
+                          Cherla Panchayat
+                        </SelectItem>
+                        <SelectItem value="bela-panchayat">
+                          Bela Panchayat
+                        </SelectItem>
+
+                        {/* Karimnagar District */}
+                        <SelectItem value="karimnagar-panchayat">
+                          Karimnagar Panchayat
+                        </SelectItem>
+                        <SelectItem value="sarangapur-panchayat">
+                          Sarangapur Panchayat
+                        </SelectItem>
+                        <SelectItem value="ramadugu-panchayat">
+                          Ramadugu Panchayat
+                        </SelectItem>
+
+                        {/* Warangal District */}
+                        <SelectItem value="warangal-panchayat">
+                          Warangal Panchayat
+                        </SelectItem>
+                        <SelectItem value="mulugu-panchayat">
+                          Mulugu Panchayat
+                        </SelectItem>
+                        <SelectItem value="dornakal-panchayat">
+                          Dornakal Panchayat
+                        </SelectItem>
+
+                        {/* Nizamabad District */}
+                        <SelectItem value="nizamabad-panchayat">
+                          Nizamabad Panchayat
+                        </SelectItem>
+                        <SelectItem value="bodhan-panchayat">
+                          Bodhan Panchayat
+                        </SelectItem>
+                        <SelectItem value="banswada-panchayat">
+                          Banswada Panchayat
                         </SelectItem>
                       </SelectContent>
                     </Select>
@@ -379,8 +526,48 @@ export const RegisterModal: React.FC<RegisterModalProps> = ({
                         <SelectValue placeholder="Select village" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="sample-village">
-                          Sample Village
+                        {/* Adilabad District */}
+                        <SelectItem value="adilabad-village">
+                          Adilabad Village
+                        </SelectItem>
+                        <SelectItem value="cherla-village">
+                          Cherla Village
+                        </SelectItem>
+                        <SelectItem value="bela-village">
+                          Bela Village
+                        </SelectItem>
+
+                        {/* Karimnagar District */}
+                        <SelectItem value="karimnagar-village">
+                          Karimnagar Village
+                        </SelectItem>
+                        <SelectItem value="sarangapur-village">
+                          Sarangapur Village
+                        </SelectItem>
+                        <SelectItem value="ramadugu-village">
+                          Ramadugu Village
+                        </SelectItem>
+
+                        {/* Warangal District */}
+                        <SelectItem value="warangal-village">
+                          Warangal Village
+                        </SelectItem>
+                        <SelectItem value="mulugu-village">
+                          Mulugu Village
+                        </SelectItem>
+                        <SelectItem value="dornakal-village">
+                          Dornakal Village
+                        </SelectItem>
+
+                        {/* Nizamabad District */}
+                        <SelectItem value="nizamabad-village">
+                          Nizamabad Village
+                        </SelectItem>
+                        <SelectItem value="bodhan-village">
+                          Bodhan Village
+                        </SelectItem>
+                        <SelectItem value="banswada-village">
+                          Banswada Village
                         </SelectItem>
                       </SelectContent>
                     </Select>
